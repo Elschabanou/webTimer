@@ -1,13 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
+
+:root {
+    --background-color: black;
+    /* Background color */
+    --main-color: #F4FFCA;
+    /* Main color */
+}
+
+
 body {
     font-family: Arial, sans-serif;
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #F4FFCA;
+    background-color: var(--main-color);
     margin: 0;
-    
+
 }
+
+
 
 .countdown {
     display: flex;
@@ -16,8 +27,27 @@ body {
 .countdown div {
     margin: 0 10px;
     font-size: 2rem;
-    border: 2px solid #333;
-    padding: 10px;
     min-width: 60px;
     text-align: center;
+}
+
+header {
+    color: var(--background-color);
+    font-family: "Sarina";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.top-Content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40 100 40 100;
+
 }
