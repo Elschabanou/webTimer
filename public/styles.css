@@ -12,30 +12,29 @@ body {
     font-family: "Inria Serif";
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: var(--main-color);
     margin: 0;
     overflow-x: hidden;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
 }
 
 .countdown {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    gap: 30px;
+    gap: 20px;
 
 }
 
 .countdown div {
-    text-align: center;
+    text-align: left;
     font-family: "Inria Serif";
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
+
 }
 
 header {
@@ -48,6 +47,7 @@ header {
     display: flex;
     justify-content: center;
     padding-top: 40px;
+    width: 100%;
 }
 
 .top-Content {
@@ -56,6 +56,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 40px 100px 0px 100px;
+    flex-wrap: wrap;
 
 }
 
@@ -66,6 +67,7 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
 }
 
 #seconds {
@@ -79,6 +81,7 @@ header {
 
 .singelCounter {
     text-align: left !important;
+    
 }
 
 .subtitleCounter {
@@ -94,6 +97,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    
 
 }
 
