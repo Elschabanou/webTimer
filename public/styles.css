@@ -18,6 +18,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    width: 100%;
 }
 
 .countdown {
@@ -40,7 +41,7 @@ body {
 header {
     color: var(--background-color);
     font-family: "Sarina";
-    font-size: 40px;
+    font-size: 4vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -103,6 +104,18 @@ header {
 
 .upcoming-Events {
     background-color: var(--background-color);
-    padding: 40px 100px 40px 100px;
+    padding: 40px 10% 40px 10%;
     align-items: center !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .countNumer {
+        font-size: 50px;
+    }
+    .top-Content{
+        padding: 40px 0 40px 0;
+    }
+    #seconds{
+        font-size: 20px;
+    }
 }
