@@ -9,15 +9,13 @@ app.set('views', path.join(__dirname, '/views'));
 const db = new sqlite3.Database('./WeTimer.db');
 
 
-app.get('/', (req, res) =>{
+app.get('/', (req, res) => {
 
     db.all('SELECT * FROM events', [], (err, rows) => {
-        console.error(err);
-        console.log(rows);
-        res.render('index', {events: rows});
+        res.render('index', { events: rows });
     });
 
-    
+
 
 })
 
