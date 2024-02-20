@@ -111,8 +111,7 @@ header {
 
 .upcoming-Events {
     background-color: var(--background-color);
-    padding: 40px 10% 40px 10%;
-    align-items: center !important;
+    padding: 40px 10% 100px 10%;
 }
 
 @media only screen and (max-width: 560px) {
@@ -127,6 +126,7 @@ header {
     #seconds {
         font-size: 20px !important;
         min-width: 25px;
+        margin-bottom: 30px;
     }
 
     #subtitle {
@@ -136,5 +136,6 @@ header {
     img {
         flex-grow: 1;
         width: 90%;
+        margin-top: 10%;
     }
 }
