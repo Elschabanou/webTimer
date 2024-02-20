@@ -6,6 +6,7 @@
     /* Background color */
     --main-color: #F4FFCA;
     /* Main color */
+    --white-color: #edf8ee;
 }
 
 body {
@@ -112,6 +113,12 @@ header {
 .upcoming-Events {
     background-color: var(--background-color);
     padding: 40px 10% 100px 10%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #B2CF5A;
 }
 
 @media only screen and (max-width: 560px) {
@@ -138,4 +145,30 @@ header {
         width: 90%;
         margin-top: 10%;
     }
+}
+
+button {
+    background-color: white;
+}
+
+.event-card {
+    font-size: 20px;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    align-items: center;
+    max-width: 60vw;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+#date {
+    background-color: var(--main-color);
+    color: var(--background-color) !important;
+    padding: 10px 30px 10px 0;
+    min-width: 170px;
+    vertical-align: middle;
 }

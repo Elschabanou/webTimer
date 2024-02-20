@@ -7,8 +7,6 @@
     <title>Pia & Jeronimo Counter</title>
     <link rel="icon" type="image/png" href="/images/favicon.png">
     <link rel="stylesheet" href="styles.css">
-
-
 </head>
 
 <body>
@@ -41,9 +39,22 @@
     </div>
     <div class="upcoming-Events">
         <h2>Upcoming Events</h2>
+        <% events.forEach((event, index)=> { %>
+            <div class="event-card">
+
+                <%= event.title %>
+                    <%= event.description %>
+                        <div id="date">
+                            <%= event.date %>
+                        </div>
+
+
+            </div>
+            <% }) %>
     </div>
 
     <script src="script.js"></script>
+
 </body>
 
 </html>
