@@ -26,10 +26,9 @@ body {
     justify-content: center;
     align-items: flex-end;
     gap: 20px;
-
 }
 
-#subtitle{
+#subtitle {
     font-size: 32px;
 }
 
@@ -42,6 +41,11 @@ body {
 
 }
 
+img {
+    width: 450px;
+    height: auto;
+}
+
 header {
     color: var(--background-color);
     font-family: "Sarina";
@@ -51,7 +55,7 @@ header {
     line-height: normal;
     display: flex;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 5vh;
     width: 100%;
 }
 
@@ -86,7 +90,7 @@ header {
 
 .singelCounter {
     text-align: left !important;
-    
+
 }
 
 .subtitleCounter {
@@ -102,6 +106,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    flex-grow: 1;
 }
 
 .upcoming-Events {
@@ -114,17 +119,22 @@ header {
     .countNumer {
         font-size: 50px;
     }
-    .top-Content{
+
+    .top-Content {
         padding: 40px 0 40px 0;
     }
-    #seconds{
+
+    #seconds {
         font-size: 20px !important;
         min-width: 25px;
     }
-    body{
-        padding: 10% 0 10% 0;
-    }
-    #subtitle{
+
+    #subtitle {
         font-size: 20px;
+    }
+
+    img {
+        flex-grow: 1;
+        width: 90%;
     }
 }
