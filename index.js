@@ -14,10 +14,10 @@ app.get('/', (req, res) => {
     db.all('SELECT * FROM events', [], (err, rows) => {
         res.render('index', { events: rows });
     });
-
-
-
 })
+router.get('login', function(req, res, next) {
+    res.render('login');
+ });
 
 app.listen(3000, () => {
     console.log("Server is running on port 3000");
